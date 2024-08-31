@@ -6,6 +6,11 @@
 	objectVersion = 70;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		F15634652C8383D100163EE5 /* NeedleFoundation in Frameworks */ = {isa = PBXBuildFile; productRef = F15634642C8383D100163EE5 /* NeedleFoundation */; };
+		F15634672C8383D100163EE5 /* NeedleFoundationTest in Frameworks */ = {isa = PBXBuildFile; productRef = F15634662C8383D100163EE5 /* NeedleFoundationTest */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		F15634142C835F6A00163EE5 /* TMDB_Movies-DI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TMDB_Movies-DI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -29,6 +34,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F15634672C8383D100163EE5 /* NeedleFoundationTest in Frameworks */,
+				F15634652C8383D100163EE5 /* NeedleFoundation in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +78,8 @@
 			);
 			name = "TMDB_Movies-DI";
 			packageProductDependencies = (
+				F15634642C8383D100163EE5 /* NeedleFoundation */,
+				F15634662C8383D100163EE5 /* NeedleFoundationTest */,
 			);
 			productName = "TMDB_Movies-DI";
 			productReference = F15634142C835F6A00163EE5 /* TMDB_Movies-DI.app */;
@@ -101,6 +110,9 @@
 			);
 			mainGroup = F156340B2C835F6A00163EE5;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				F15634632C8383D100163EE5 /* XCRemoteSwiftPackageReference "needle" */,
+			);
 			productRefGroup = F15634152C835F6A00163EE5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -340,6 +352,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F15634632C8383D100163EE5 /* XCRemoteSwiftPackageReference "needle" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/uber/needle.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F15634642C8383D100163EE5 /* NeedleFoundation */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F15634632C8383D100163EE5 /* XCRemoteSwiftPackageReference "needle" */;
+			productName = NeedleFoundation;
+		};
+		F15634662C8383D100163EE5 /* NeedleFoundationTest */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F15634632C8383D100163EE5 /* XCRemoteSwiftPackageReference "needle" */;
+			productName = NeedleFoundationTest;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F156340C2C835F6A00163EE5 /* Project object */;
 }
